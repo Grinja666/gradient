@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 10;
+        }
+
+        .gradient-block {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+    
+        #linear-1 { background: linear-gradient(to right, #ff8a17, #1b2e6e); }
+        #linear-2 { background: linear-gradient(135deg, #39ff14, #2c3e50); }
+        #linear-3 { background: linear-gradient(90deg, #fc5c7d, #6a82fb); }
+        #linear-4 { background: linear-gradient(-45deg, #f06, #9f6); }
+
+      
+        #radial-1 { background: radial-gradient(circle at top left, #ff8a17, #1b2e6e); }
+        #radial-2 { background: radial-gradient(ellipse at center, #39ff14, #2c3e50); }
+        #radial-3 { background: radial-gradient(circle at bottom right, #fc5c7d, #6a82fb); }
+        #radial-4 { background: radial-gradient(ellipse at top left, #f06, #9f6); }
+
+      
+        #conic-1 { background: conic-gradient(#ff8a17, #1b2e6e); }
+        #conic-2 { background: conic-gradient(from 45deg, #39ff14, #2c3e50); }
+        #conic-3 { background: conic-gradient(#fc5c7d, #6a82fb); }
+        #conic-4 { background: conic-gradient(from 90deg, #f06, #9f6); }
+
+        
+        #repeating-linear-1 { background: repeating-linear-gradient(to right, #ff8a17, #1b2e6e 30px); }
+        #repeating-linear-2 { background: repeating-linear-gradient(45deg, #39ff14, #2c3e50 50px); }
+        #repeating-linear-3 { background: repeating-linear-gradient(90deg, #fc5c7d, #6a82fb 20px); }
+        #repeating-linear-4 { background: repeating-linear-gradient(-30deg, #f06, #9f6 40px); }
+
+        
+        #repeating-radial-1 { background: repeating-radial-gradient(circle at top left, #ff8a17, #1b2e6e 30px); }
+        #repeating-radial-2 { background: repeating-radial-gradient(ellipse at center, #39ff14, #2c3e50 50px); }
+        #repeating-radial-3 { background: repeating-radial-gradient(circle at bottom right, #fc5c7d, #6a82fb 20px); }
+        #repeating-radial-4 { background: repeating-radial-gradient(ellipse at top left, #f06, #9f6 40px); }
+    </style>
+</head>
+<body>
+    <div id="linear-1" class="gradient-block"></div>
+    <div id="linear-2" class="gradient-block"></div>
+    <div id="linear-3" class="gradient-block"></div>
+    <div id="linear-4" class="gradient-block"></div>
+
+    <div id="radial-1" class="gradient-block"></div>
+    <div id="radial-2" class="gradient-block"></div>
+    <div id="radial-3" class="gradient-block"></div>
+    <div id="radial-4" class="gradient-block"></div>
+
+    <div id="conic-1" class="gradient-block"></div>
+    <div id="conic-2" class="gradient-block"></div>
+    <div id="conic-3" class="gradient-block"></div>
+    <div id="conic-4" class="gradient-block"></div>
+
+    <div id="repeating-linear-1" class="gradient-block"></div>
+    <div id="repeating-linear-2" class="gradient-block"></div>
+    <div id="repeating-linear-3" class="gradient-block"></div>
+    <div id="repeating-linear-4" class="gradient-block"></div>
+
+    <div id="repeating-radial-1" class="gradient-block"></div>
+    <div id="repeating-radial-2" class="gradient-block"></div>
+    <div id="repeating-radial-3" class="gradient-block"></div>
+    <div id="repeating-radial-4" class="gradient-block"></div>
+</body>
+</html>
